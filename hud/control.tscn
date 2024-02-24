@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://d21mb81qnxoj3"]
+[gd_scene load_steps=3 format=3 uid="uid://cc1oskf3u473a"]
 
 [ext_resource type="Texture2D" uid="uid://cgadbvk47koxf" path="res://art/2024_02_23_0t5_Kleki.png" id="2_dvss6"]
 [ext_resource type="Texture2D" uid="uid://cotbthhcu51w3" path="res://art/pixil-frame-0.png" id="3_hp4bg"]
@@ -16,7 +16,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="202402230t5Kleki" type="Sprite2D" parent="."]
-position = Vector2(544.5, 300.5)
+position = Vector2(551, 307)
 scale = Vector2(0.565918, 0.32373)
 texture = ExtResource("2_dvss6")
 
