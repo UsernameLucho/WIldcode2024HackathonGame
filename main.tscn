@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://de34og8r4c2sq"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_4t6bu"]
+[ext_resource type="PackedScene" uid="uid://beo7wo16jvm1l" path="res://Player.tscn" id="2_2r8vf"]
+[ext_resource type="PackedScene" uid="uid://1k2y8et04e1o" path="res://bar.tscn" id="3_21xak"]
+[ext_resource type="PackedScene" uid="uid://ca15kdk5vb7iy" path="res:// bullet.tscn" id="4_g2mts"]
+
+[sub_resource type="Curve2D" id="Curve2D_8ew2e"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 480, 1, 0, 0, 0, 0, 481, 718, 0, 0, 0, 0, -1, 718, 0, 0, 0, 0, 0, 0)
+}
+point_count = 5
+
+[node name="Main" type="Node"]
+script = ExtResource("1_4t6bu")
+
+[node name="ScoreTimer" type="Timer" parent="."]
+
+[node name="MobTimer" type="Timer" parent="."]
+wait_time = 0.5
+
+[node name="StartTimer" type="Timer" parent="."]
+wait_time = 2.0
+
+[node name="StartPosition" type="Marker2D" parent="."]
+position = Vector2(640, 550)
+
+[node name="Path2D" type="Path2D" parent="."]
+position = Vector2(1.39212, 0)
+scale = Vector2(2.39212, 0.902507)
+curve = SubResource("Curve2D_8ew2e")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+rotation = 0.00208333
+
+[node name="Player" parent="." instance=ExtResource("2_2r8vf")]
+
+[node name="Bar" parent="." instance=ExtResource("3_21xak")]
+anchors_preset = -1
+offset_left = -1.0
+
+[node name="Bullet" parent="." instance=ExtResource("4_g2mts")]

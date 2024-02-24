@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://ca15kdk5vb7iy"]
+
+[ext_resource type="Texture2D" uid="uid://cyy8duqob5w0b" path="res://soap bullet.png" id="1_1ny53"]
+[ext_resource type="Script" path="res://bullet.gd" id="1_rr4f1"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tyu1l"]
+radius = 3.0
+height = 8.0
+
+[node name="Bullet" type="CharacterBody2D"]
+script = ExtResource("1_rr4f1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_1ny53")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_tyu1l")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
