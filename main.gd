@@ -3,6 +3,9 @@ extends Node
 @export var mob_scene: PackedScene
 var score
 
+func _on_pressed():
+	pass
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	new_game()
@@ -23,3 +26,6 @@ func new_game():
 	score = 0
 	$Player.start($StartPosition.position)
 	$StartTimer.start()
+	
+
+	
