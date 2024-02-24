@@ -6,6 +6,8 @@ signal hit
 
 @export var health = 100
 var screen_size
+const bulletPath = preload("res:// bullet.tscn")
+
 
 
 # Called when the node enters the scene tree for the first time.
@@ -46,4 +48,8 @@ func start(pos):
 	position = pos
 	show()
 	$CollisionShape2D.disabled = false
+
+func shoot():
+	var bullet = bulletPath.instance()
+	get_parent().add_child(bullet)
 	

@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://de34og8r4c2sq"]
+[gd_scene load_steps=7 format=3 uid="uid://de34og8r4c2sq"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_4t6bu"]
 [ext_resource type="PackedScene" uid="uid://beo7wo16jvm1l" path="res://Player.tscn" id="2_2r8vf"]
 [ext_resource type="PackedScene" uid="uid://1k2y8et04e1o" path="res://bar.tscn" id="3_21xak"]
 [ext_resource type="PackedScene" uid="uid://ca15kdk5vb7iy" path="res:// bullet.tscn" id="4_g2mts"]
+[ext_resource type="PackedScene" uid="uid://s6q52q8wxsg5" path="res://enemy.tscn" id="5_4r1fh"]
 
 [sub_resource type="Curve2D" id="Curve2D_8ew2e"]
 _data = {
@@ -40,3 +41,5 @@ anchors_preset = -1
 offset_left = -1.0
 
 [node name="Bullet" parent="." instance=ExtResource("4_g2mts")]
+
+[node name="Enemy" parent="." instance=ExtResource("5_4r1fh")]
