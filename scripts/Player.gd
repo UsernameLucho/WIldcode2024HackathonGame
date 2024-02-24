@@ -1,4 +1,4 @@
-class_name Player extends Area2D
+class_name Player extends Area2D #credit to the godot docs
 
 signal hit
 

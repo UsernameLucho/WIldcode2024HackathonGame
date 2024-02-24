@@ -9,6 +9,7 @@ height = 10.0
 
 [node name="Bullet" type="Area2D"]
 scale = Vector2(3, 3)
+collision_priority = 2.0
 script = ExtResource("1_srkwa")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

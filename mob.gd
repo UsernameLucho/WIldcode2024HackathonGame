@@ -1,4 +1,4 @@
-class_name Mob extends RigidBody2D
+class_name Mob extends RigidBody2D#credit to godot docs
 
 
 # Called when the node enters the scene tree for the first time.

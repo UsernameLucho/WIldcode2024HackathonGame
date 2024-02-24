@@ -1,4 +1,4 @@
-extends Node
+extends Node# credit to godot docs
 
 @export var mob_scene: PackedScene
 
@@ -32,7 +32,7 @@ func new_game():
 	$Player.start($StartPosition.position)
 	$StartTimer.start()
 
-func shoot():
+func shoot(): #credit to chatgpt and this video: https://www.youtube.com/watch?v=2G41KECXXn4
 	var bullet = bulletPath.instantiate()
 	get_parent().add_child(bullet)
 
