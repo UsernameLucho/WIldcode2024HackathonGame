@@ -5,17 +5,17 @@
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tyu1l"]
 radius = 3.0
-height = 8.0
+height = 10.0
 
-[node name="Bullet" type="CharacterBody2D"]
+[node name="Bullet" type="Area2D"]
 scale = Vector2(3, 3)
 script = ExtResource("1_srkwa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_tyu1l")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
 texture = ExtResource("2_jyw2q")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_tyu1l")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]

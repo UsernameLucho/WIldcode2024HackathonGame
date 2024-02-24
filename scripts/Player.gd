@@ -39,7 +39,7 @@ func _process(delta):
 	if health <= 0: hide()
 
 func _on_body_entered(body):
-	health -= 10
+	health -= 20
 	hit.emit()
 	$CollisionShape2D.set_deferred("disabled", true)
 

@@ -1,12 +1,11 @@
 extends Node
 
 @export var mob_scene: PackedScene
-#@export var enemy_scenes: Array[PackedScene] = []
-@onready var enemy_container = $Enemy
+
 var score
 const UP_DIRECTION = Vector2(0, -1)
 const bulletPath = preload("res://scenes/ bullet.tscn")
-
+var health = 100
 func _on_2ndbutton_pressed():
 	pass # Replace with function body.
 
@@ -21,6 +20,7 @@ func _process(delta):
 	if Input.is_action_just_pressed("Shoot"):
 		shoot()
 		#bullet.position = $Player.position
+	$Bar/HealthBar.value = $Player.health
 		
 	
 func game_over():
@@ -52,20 +52,20 @@ func _on_start_timer_timeout():
 func _on_mob_timer_timeout():
 	# Create a new instance of the Mob scene.
 	var mob = mob_scene.instantiate()
+	mob.hide()
 
 	# Choose a random location on Path2D.
 	var mob_spawn_location = $Path2D/PathFollow2D
 	mob_spawn_location.progress_ratio = randf()
 
 	# Set the mob's direction perpendicular to the path direction.
-	var direction = mob_spawn_location.rotation + PI / 2
+	var direction = mob_spawn_location.rotation + 1
 
 	# Set the mob's position to a random location.
 	mob.position = mob_spawn_location.position
 
 	# Add some randomness to the direction.
-	direction += randf_range(-PI / 4, PI / 4)
-	mob.rotation = direction
+	
 
 	# Choose the velocity for the mob.
 	var velocity = Vector2(randf_range(150.0, 250.0), 0.0)
@@ -73,3 +73,7 @@ func _on_mob_timer_timeout():
 
 	# Spawn the mob by adding it to the Main scene.
 	add_child(mob)
+	mob.show()
+
+
+	

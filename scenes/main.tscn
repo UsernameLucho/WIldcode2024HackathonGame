@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://de34og8r4c2sq"]
+[gd_scene load_steps=7 format=3 uid="uid://de34og8r4c2sq"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_4t6bu"]
 [ext_resource type="PackedScene" uid="uid://beo7wo16jvm1l" path="res://scenes/Player.tscn" id="2_2r8vf"]
 [ext_resource type="PackedScene" uid="uid://5nofwpc4mav1" path="res://mob.tscn" id="2_ck1p0"]
 [ext_resource type="PackedScene" uid="uid://1k2y8et04e1o" path="res://scenes/bar.tscn" id="3_21xak"]
+[ext_resource type="Texture2D" uid="uid://c1st5i3dad5rs" path="res://art/background.png" id="5_2rmdx"]
 
 [sub_resource type="Curve2D" id="Curve2D_8ew2e"]
 _data = {
@@ -14,6 +15,11 @@ point_count = 5
 [node name="Main" type="Node"]
 script = ExtResource("1_4t6bu")
 mob_scene = ExtResource("2_ck1p0")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(603, -13)
+scale = Vector2(1.91094, 0.37037)
+texture = ExtResource("5_2rmdx")
 
 [node name="ScoreTimer" type="Timer" parent="."]
 
@@ -35,7 +41,13 @@ curve = SubResource("Curve2D_8ew2e")
 rotation = 0.00208333
 
 [node name="Player" parent="." instance=ExtResource("2_2r8vf")]
+visibility_layer = 2
 
 [node name="Bar" parent="." instance=ExtResource("3_21xak")]
+visibility_layer = 4
 anchors_preset = -1
 offset_left = -1.0
+
+[connection signal="timeout" from="ScoreTimer" to="." method="_on_score_timer_timeout"]
+[connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]
+[connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]
