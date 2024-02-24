@@ -5,8 +5,7 @@ extends Node
 @onready var enemy_container = $Enemy
 var score
 
-
-func _on_button_pressed():
+func _on_2ndbutton_pressed():
 	pass # Replace with function body.
 
 # Called when the node enters the scene tree for the first time.
