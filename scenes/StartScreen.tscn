@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://c4m5enjpd0jfj"]
+[gd_scene load_steps=5 format=3 uid="uid://c4m5enjpd0jfj"]
 
 [ext_resource type="Script" path="res://scripts/StartScreen.gd" id="1_gnols"]
 [ext_resource type="Texture2D" uid="uid://cgadbvk47koxf" path="res://art/2024_02_23_0t5_Kleki.png" id="2_aqur7"]
 [ext_resource type="Texture2D" uid="uid://cotbthhcu51w3" path="res://art/pixil-frame-0.png" id="3_rw64c"]
+[ext_resource type="AudioStream" uid="uid://cqhsglvlcyucc" path="res://music/Intro 2.wav" id="4_eybch"]
 
 [node name="StartScreen" type="Node2D"]
 script = ExtResource("1_gnols")
@@ -22,5 +23,10 @@ offset_bottom = 888.0
 position = Vector2(25.8902, 867.664)
 scale = Vector2(5.91946, 7.60076)
 texture = ExtResource("3_rw64c")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_eybch")
+volume_db = -20.0
+autoplay = true
 
 [connection signal="pressed" from="202402230t5Kleki/Button" to="." method="_on_button_pressed"]

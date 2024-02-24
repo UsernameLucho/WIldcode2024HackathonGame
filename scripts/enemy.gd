@@ -13,7 +13,7 @@ func die():
 	queue_free() 
 	
 func _on_body_entered(body): 
-	if body is Player: 
+a	if body is Player: 
 		$Player.health -= 10
 		
 		

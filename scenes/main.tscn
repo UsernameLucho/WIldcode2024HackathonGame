@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://de34og8r4c2sq"]
+[gd_scene load_steps=8 format=3 uid="uid://de34og8r4c2sq"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_4t6bu"]
 [ext_resource type="PackedScene" uid="uid://beo7wo16jvm1l" path="res://scenes/Player.tscn" id="2_2r8vf"]
 [ext_resource type="PackedScene" uid="uid://5nofwpc4mav1" path="res://mob.tscn" id="2_ck1p0"]
 [ext_resource type="PackedScene" uid="uid://1k2y8et04e1o" path="res://scenes/bar.tscn" id="3_21xak"]
 [ext_resource type="Texture2D" uid="uid://c1st5i3dad5rs" path="res://art/background.png" id="5_2rmdx"]
+[ext_resource type="AudioStream" uid="uid://bbcp3fbm483vh" path="res://music/My Song 2.wav" id="6_vb2yc"]
 
 [sub_resource type="Curve2D" id="Curve2D_8ew2e"]
 _data = {
@@ -47,6 +48,11 @@ visibility_layer = 2
 visibility_layer = 4
 anchors_preset = -1
 offset_left = -1.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_vb2yc")
+volume_db = -15.0
+autoplay = true
 
 [connection signal="timeout" from="ScoreTimer" to="." method="_on_score_timer_timeout"]
 [connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]
