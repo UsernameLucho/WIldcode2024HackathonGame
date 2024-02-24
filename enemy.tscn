@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://s6q52q8wxsg5"]
+
+[ext_resource type="Texture2D" uid="uid://j6681vcbpuke" path="res://Assets/PNG/Enemies/enemyRed3.png" id="1_h0r87"]
+[ext_resource type="Script" path="res://Scenes/enemy.gd" id="1_num67"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_m2j2m"]
+radius = 43.1045
+
+[node name="Enemy" type="Area2D"]
+collision_layer = 2
+collision_mask = 5
+script = ExtResource("1_num67")
+hp = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_h0r87")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_m2j2m")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(-0.999999, -79)
+scale = Vector2(1.475, 1.5)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
