@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://b8p1smgilue48"]
 
-[ext_resource type="Script" path="res://main.gd" id="1_4t6bu"]
-[ext_resource type="PackedScene" uid="uid://cni6mk73jf2ve" path="res://Player.tscn" id="2_2r8vf"]
-[ext_resource type="PackedScene" path="res://bar.tscn" id="3_21xak"]
-[ext_resource type="PackedScene" path="res:// bullet.tscn" id="4_g2mts"]
-[ext_resource type="PackedScene" uid="uid://g6x2xk6queev" path="res://enemy.tscn" id="5_kv7jb"]
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_4t6bu"]
+[ext_resource type="PackedScene" path="res://Player.tscn" id="2_2r8vf"]
+[ext_resource type="PackedScene" uid="uid://1k2y8et04e1o" path="res://scenes/bar.tscn" id="3_21xak"]
+[ext_resource type="PackedScene" uid="uid://ca15kdk5vb7iy" path="res://scenes/ bullet.tscn" id="4_g2mts"]
+[ext_resource type="PackedScene" path="res://enemy.tscn" id="5_kv7jb"]
 
 [sub_resource type="Curve2D" id="Curve2D_8ew2e"]
 _data = {

@@ -1,4 +1,4 @@
-extends Area2D
+class_name Player extends Area2D
 
 signal hit
 
@@ -6,7 +6,6 @@ signal hit
 
 @export var health = 100
 var screen_size
-const bulletPath = preload("res:// bullet.tscn")
 
 
 
@@ -48,8 +47,4 @@ func start(pos):
 	position = pos
 	show()
 	$CollisionShape2D.disabled = false
-
-func shoot():
-	var bullet = bulletPath.instance()
-	get_parent().add_child(bullet)
 	

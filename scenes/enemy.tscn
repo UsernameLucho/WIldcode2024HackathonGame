@@ -4,18 +4,20 @@
 [ext_resource type="Script" path="res://scripts/enemy.gd" id="1_num67"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_m2j2m"]
-radius = 43.1045
+radius = 5.4
 
 [node name="Enemy" type="Area2D"]
+texture_filter = 1
+scale = Vector2(5, 5)
 collision_layer = 2
 collision_mask = 5
 script = ExtResource("1_num67")
-hp = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_h0r87")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0.6)
 shape = SubResource("CircleShape2D_m2j2m")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]

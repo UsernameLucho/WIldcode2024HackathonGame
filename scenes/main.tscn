@@ -1,10 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://de34og8r4c2sq"]
+[gd_scene load_steps=6 format=3 uid="uid://de34og8r4c2sq"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_4t6bu"]
 [ext_resource type="PackedScene" uid="uid://beo7wo16jvm1l" path="res://scenes/Player.tscn" id="2_2r8vf"]
+[ext_resource type="PackedScene" uid="uid://5nofwpc4mav1" path="res://mob.tscn" id="2_ck1p0"]
 [ext_resource type="PackedScene" uid="uid://1k2y8et04e1o" path="res://scenes/bar.tscn" id="3_21xak"]
-[ext_resource type="PackedScene" uid="uid://ca15kdk5vb7iy" path="res://scenes/ bullet.tscn" id="4_g2mts"]
-[ext_resource type="PackedScene" uid="uid://s6q52q8wxsg5" path="res://scenes/enemy.tscn" id="5_4r1fh"]
 
 [sub_resource type="Curve2D" id="Curve2D_8ew2e"]
 _data = {
@@ -14,6 +13,7 @@ point_count = 5
 
 [node name="Main" type="Node"]
 script = ExtResource("1_4t6bu")
+mob_scene = ExtResource("2_ck1p0")
 
 [node name="ScoreTimer" type="Timer" parent="."]
 
@@ -39,7 +39,3 @@ rotation = 0.00208333
 [node name="Bar" parent="." instance=ExtResource("3_21xak")]
 anchors_preset = -1
 offset_left = -1.0
-
-[node name="Bullet" parent="." instance=ExtResource("4_g2mts")]
-
-[node name="Enemy" parent="." instance=ExtResource("5_4r1fh")]
