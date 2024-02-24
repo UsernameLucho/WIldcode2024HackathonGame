@@ -5,6 +5,10 @@ extends Node
 @onready var enemy_container = $Enemy
 var score
 
+
+func _on_button_pressed():
+	pass # Replace with function body.
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	new_game()

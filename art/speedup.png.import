@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2p7uibsjg67b"
-path="res://.godot/imported/rat bullet.png-238cf31490d3e464e16157d67abeba72.ctex"
+uid="uid://bgjst8i82086n"
+path="res://.godot/imported/speedup.png-2c3cba147f400be4818095adc1d3ab8b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://rat bullet.png"
-dest_files=["res://.godot/imported/rat bullet.png-238cf31490d3e464e16157d67abeba72.ctex"]
+source_file="res://art/speedup.png"
+dest_files=["res://.godot/imported/speedup.png-2c3cba147f400be4818095adc1d3ab8b.ctex"]
 
 [params]
 

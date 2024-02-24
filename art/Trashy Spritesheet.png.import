@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6mnfdqmavaad"
-path="res://.godot/imported/banana bullet.png-e41af598e228561876275447ce30cb05.ctex"
+uid="uid://bmq44k5qwftk6"
+path="res://.godot/imported/Trashy Spritesheet.png-9432fe9e4dc827dc92f4bfd31c480754.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://banana bullet.png"
-dest_files=["res://.godot/imported/banana bullet.png-e41af598e228561876275447ce30cb05.ctex"]
+source_file="res://art/Trashy Spritesheet.png"
+dest_files=["res://.godot/imported/Trashy Spritesheet.png-9432fe9e4dc827dc92f4bfd31c480754.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://t85a0rqtrijp"
-path="res://.godot/imported/baby trashy.png-c8a07f081ca9fb1b39a36bf7d5c51bda.ctex"
+uid="uid://bse1xthdtlpys"
+path="res://.godot/imported/energy.png-c665eb467ab832f115f12b6f0c039727.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://baby trashy.png"
-dest_files=["res://.godot/imported/baby trashy.png-c8a07f081ca9fb1b39a36bf7d5c51bda.ctex"]
+source_file="res://art/energy.png"
+dest_files=["res://.godot/imported/energy.png-c665eb467ab832f115f12b6f0c039727.ctex"]
 
 [params]
 

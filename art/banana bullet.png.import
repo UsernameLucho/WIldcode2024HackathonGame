@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cyy8duqob5w0b"
-path="res://.godot/imported/soap bullet.png-e8742efbadb1e2ab18319e6e929ab86f.ctex"
+uid="uid://b6mnfdqmavaad"
+path="res://.godot/imported/banana bullet.png-161e3f20a075d255bf444e0b0b30605f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://soap bullet.png"
-dest_files=["res://.godot/imported/soap bullet.png-e8742efbadb1e2ab18319e6e929ab86f.ctex"]
+source_file="res://art/banana bullet.png"
+dest_files=["res://.godot/imported/banana bullet.png-161e3f20a075d255bf444e0b0b30605f.ctex"]
 
 [params]
 

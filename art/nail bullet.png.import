@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmq44k5qwftk6"
-path="res://.godot/imported/Trashy Spritesheet.png-3548285cc2c7a9ccd3f6948e9d1f618c.ctex"
+uid="uid://bq8w1vwmeaaui"
+path="res://.godot/imported/nail bullet.png-51e7a8c3a2174bb22347739eacae6977.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Trashy Spritesheet.png"
-dest_files=["res://.godot/imported/Trashy Spritesheet.png-3548285cc2c7a9ccd3f6948e9d1f618c.ctex"]
+source_file="res://art/nail bullet.png"
+dest_files=["res://.godot/imported/nail bullet.png-51e7a8c3a2174bb22347739eacae6977.ctex"]
 
 [params]
 

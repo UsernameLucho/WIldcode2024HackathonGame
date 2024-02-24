@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1sv6f0iuj2o1"
-path="res://.godot/imported/gunk bullet.png-2d79d73aeff0587dc3030fa1533e52b2.ctex"
+uid="uid://cyy8duqob5w0b"
+path="res://.godot/imported/soap bullet.png-74ac280dbce3d90f8e49f5541565158d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gunk bullet.png"
-dest_files=["res://.godot/imported/gunk bullet.png-2d79d73aeff0587dc3030fa1533e52b2.ctex"]
+source_file="res://art/soap bullet.png"
+dest_files=["res://.godot/imported/soap bullet.png-74ac280dbce3d90f8e49f5541565158d.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpehmswuubd6d"
-path="res://.godot/imported/doubleshot.png-55f4d8ea102d14a636eaea2c6f139ba3.ctex"
+uid="uid://b2p7uibsjg67b"
+path="res://.godot/imported/rat bullet.png-d3196125d9e599242426b14d0ef6f39b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://doubleshot.png"
-dest_files=["res://.godot/imported/doubleshot.png-55f4d8ea102d14a636eaea2c6f139ba3.ctex"]
+source_file="res://art/rat bullet.png"
+dest_files=["res://.godot/imported/rat bullet.png-d3196125d9e599242426b14d0ef6f39b.ctex"]
 
 [params]
 
